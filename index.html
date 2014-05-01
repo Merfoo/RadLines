@@ -18,7 +18,7 @@
             var _line = { body: [], width: 10 };
             var _mouse = { x: null, y: null, down: false };
 
-            document.addEventListener("DOMContentLoaded", initGame);
+            //document.addEventListener("DOMContentLoaded", initGame);
             document.documentElement.style.overflowX = "hidden";	 // Horizontal scrollbar will be hidden
             document.documentElement.style.overflowY = "hidden";     // Vertical scrollbar will be hidden
             window.addEventListener("mousedown", mouseDownEvent);
@@ -159,7 +159,7 @@
             }
         </script>
     </head>
-    <body>
+    <body onload="initGame();">
         <canvas id="gameCanvas"></canvas>
     </body>
 </html>
